@@ -1,10 +1,10 @@
 {
-	"name": "@sapphire/template",
+	"name": "@kaname-png/nekodex",
 	"version": "0.0.1",
 	"description": "template",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"author": "@sapphire",
+	"author": "@kaname-png",
 	"license": "MIT",
 	"scripts": {
 		"lint": "eslint src tests --ext ts --fix",

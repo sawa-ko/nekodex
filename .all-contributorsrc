@@ -1,6 +1,6 @@
 {
-	"projectName": "template",
-	"projectOwner": "sapphiredev",
+	"projectName": "nekodex",
+	"projectOwner": "kaname-png",
 	"repoType": "github",
 	"repoHost": "https://github.com",
 	"files": ["README.md"],
