@@ -9,7 +9,7 @@ export class Nekodex extends Client {
 		super({
 			defaultPrefix: envParseString('CLIENT_PREFIX'),
 			hmr: {
-				enabled: envParseBoolean('DOTENV_DEBUG')
+				enabled: envParseBoolean('CLIENT_DEBUG')
 			},
 			logger: {
 				displayFunctionName: false,
