@@ -2,13 +2,18 @@ import { Client, container } from '@kaname-png/revoltx';
 
 import { stripIndents } from 'common-tags';
 import { yellow, red } from 'colorette';
+import { envParseBoolean } from '@skyra/env-utilities';
 
 export class Nekodex extends Client {
 	public constructor() {
 		super({
 			defaultPrefix: '!',
+			hmr: {
+				enabled: envParseBoolean('DEBUG')
+			},
 			logger: {
-				displayFunctionName: false
+				displayFunctionName: false,
+				minLevel: 'debug'
 			}
 		});
 	}
