@@ -8,7 +8,7 @@ export class PingCommand extends Command {
 	}
 
 	public async run(message: Message) {
-		const repliedMessage = await message.reply('⏲️ ...');
+		const repliedMessage = await message.reply('⏲️ ...', false);
 		return repliedMessage?.edit({
 			content: stripIndents`
 			🏓 My ping with **you was** \`${repliedMessage.createdAt - message.createdAt}ms\` and with **Revolt** \`${this.container.client.ping}ms\`.
