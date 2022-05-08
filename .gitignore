@@ -36,4 +36,4 @@ gh
 wiki/
 
 # ignore .env
-.env
+.env.development

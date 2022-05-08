@@ -9,6 +9,6 @@ export class PingCommand extends Command {
 
 	public async run(message: Message) {
 		const repliedMessage = await message.reply('⏲️ ...');
-		return repliedMessage?.edit({ content: `🏓 My ping with you is ${repliedMessage.createdAt - message.createdAt}` });
+		return repliedMessage?.edit({ content: `🏓 My ping with you was ${repliedMessage.createdAt - message.createdAt}.` });
 	}
 }
