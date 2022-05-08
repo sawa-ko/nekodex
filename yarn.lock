@@ -1126,7 +1126,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.4
     "@commitlint/config-conventional": ^16.2.4
-    "@kaname-png/revoltx": ^1.5.3
+    "@kaname-png/revoltx": ^1.5.4
     "@sapphire/eslint-config": ^4.3.4
     "@sapphire/prettier-config": ^1.4.3
     "@sapphire/ts-config": ^3.3.4
@@ -1159,9 +1159,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kaname-png/revoltx@npm:^1.5.3":
-  version: 1.5.3
-  resolution: "@kaname-png/revoltx@npm:1.5.3"
+"@kaname-png/revoltx@npm:^1.5.4":
+  version: 1.5.4
+  resolution: "@kaname-png/revoltx@npm:1.5.4"
   dependencies:
     "@discordjs/collection": ^0.6.0
     "@sapphire/pieces": ^3.3.1
@@ -1173,7 +1173,7 @@ __metadata:
     lexure: ^0.17.0
     tslib: ^2.4.0
     tslog: ^3.3.3
-  checksum: a249e59a9f511c3b7d9a27bdba2297c5116b446b1bae804cc67c6149642fc258099ed6d8d385873888f2f9ace5a2856dbf2c689eeb319c7f2292f50486fb0e94
+  checksum: 613d052244a657cfb1741b7830f435bd58beb64e842e1fe64df0004889af0d78c85bf4767209176637a8f66700ae4a7b53788a801ea9852005c8f8ccd18c1ccf
   languageName: node
   linkType: hard
 

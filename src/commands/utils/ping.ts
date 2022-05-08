@@ -1,5 +1,5 @@
-import { Command, CommandOptions } from '@kaname-png/revoltx';
-import type { PieceContext } from '@sapphire/pieces';
+import { Command, CommandOptions, PieceContext } from '@kaname-png/revoltx';
+import { stripIndents } from 'common-tags';
 import type { Message } from 'revolt.js';
 
 export class PingCommand extends Command {
@@ -9,6 +9,10 @@ export class PingCommand extends Command {
 
 	public async run(message: Message) {
 		const repliedMessage = await message.reply('⏲️ ...');
-		return repliedMessage?.edit({ content: `🏓 My ping with you was \`${repliedMessage.createdAt - message.createdAt}ms\`.` });
+		return repliedMessage?.edit({
+			content: stripIndents`
+			🏓 My ping with **you was** \`${repliedMessage.createdAt - message.createdAt}ms\` and with **Revolt** \`${this.container.client.ping}ms\`.
+			`
+		});
 	}
 }
