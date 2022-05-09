@@ -1,4 +1,4 @@
-import { Args, Command, CommandOptions, PieceContext } from '@kaname-png/revoltx';
+import { Args, Command, CommandContext, CommandOptions, PieceContext } from '@kaname-png/revoltx';
 import type { Message } from 'revolt.js';
 
 import { stripIndents } from 'common-tags';
@@ -13,7 +13,7 @@ export class HelpCommand extends Command {
 		});
 	}
 
-	public async run(message: Message, args: Args) {
+	public async run(message: Message, args: Args, ctx: CommandContext) {
 		const botUser = this.container.client.x.user;
 		const category = await args.pick('string').catch(() => null);
 
@@ -31,7 +31,7 @@ export class HelpCommand extends Command {
 								I show you my available command categories:
 								For now I have **${this.container.stores.get('commands').categories.length}** categories and **${this.store.size}** commands.
 								`,
-								`To view the commands of a category use the command: \`${this.container.client.defaultPrefix}help [ category name ]\``,
+								`To view the commands of a category use the command: \`${ctx.prefix}help [ category name ]\``,
 								stripIndents`\`\`\`
 								${this.container.stores
 									.get('commands')
@@ -48,7 +48,7 @@ export class HelpCommand extends Command {
 		}
 
 		const page = await args.pick('number', { minimum: 1 });
-		const commands = this.paginateCategoryCommands(category, page);
+		const commands = this.paginateCategoryCommands(category, page, ctx.prefix);
 		return message.reply(
 			{
 				embeds: [
@@ -63,13 +63,13 @@ export class HelpCommand extends Command {
 		);
 	}
 
-	private paginateCategoryCommands(name: string, page: number) {
+	private paginateCategoryCommands(name: string, page: number, prefix: string) {
 		return [...this.container.stores.get('commands').values()]
 			.filter(({ category }) => category === name)
 			.slice((page - 1) * 10, page * 10)
 			.map(
 				(c, i) => stripIndents`
-			${i + 1}. \`${this.container.client.defaultPrefix}${c.name}\`
+			${i + 1}. \`${prefix}${c.name}\`
 			*${c.description}*
 			`
 			);

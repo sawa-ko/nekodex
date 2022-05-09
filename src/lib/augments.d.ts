@@ -9,7 +9,7 @@ declare module '@skyra/env-utilities' {
 }
 
 declare module '@kaname-png/revoltx' {
-	interface CommandMetadataObject {
+	interface CommandMetadata {
 		usages: string[];
 		examples: string[];
 	}

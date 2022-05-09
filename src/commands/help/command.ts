@@ -1,4 +1,4 @@
-import { Args, Command, CommandMetadataObject, CommandOptions, CommandPreConditions, PieceContext } from '@kaname-png/revoltx';
+import { Args, Command, CommandOptions, CommandPreConditions, PieceContext } from '@kaname-png/revoltx';
 import type { Message } from 'revolt.js';
 
 import { stripIndents } from 'common-tags';
@@ -18,7 +18,6 @@ export class CommandInfoCommand extends Command {
 		const botUser = this.container.client.x.user;
 		const name = await args.pick('string');
 		const command = this.container.stores.get('commands').get(name);
-		const commandMetadata = command?.metadata as CommandMetadataObject;
 
 		if (!command) return message.reply('I have not found any command with that name, do I have that command?', false);
 		const cooldownCommand = command.preconditions.entries.find(
@@ -37,8 +36,8 @@ export class CommandInfoCommand extends Command {
 						description: [
 							this.generateInfoSections('✏ Description', command.description),
 							this.generateInfoSections('📁 Category', command.category),
-							this.generateInfoSections('🏫 Usages', commandMetadata.usages.map((u, i) => `${i + 1}. ${u}`).join('\n')),
-							this.generateInfoSections('🔎 Examples', commandMetadata.examples.map((e, i) => `${i + 1}. ${e}`).join('\n')),
+							this.generateInfoSections('🏫 Usages', this.metadata?.usages.map((u, i) => `${i + 1}. ${u}`).join('\n')),
+							this.generateInfoSections('🔎 Examples', this.metadata?.examples.map((e, i) => `${i + 1}. ${e}`).join('\n')),
 							this.generateInfoSections(
 								'⏰ Cooldown',
 								cooldownCommand
