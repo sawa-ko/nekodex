@@ -8,7 +8,7 @@ export class HelpCommand extends Command {
 		super(context, {
 			...options,
 			description: 'General help about my commands and me.',
-			metadata: { examples: ['help'], usages: ['help'] },
+			metadata: { examples: ['help', 'help [ category name ] [ page ]'], usages: ['help', 'help roleplay 1'] },
 			clientPermissions: ['SendEmbeds']
 		});
 	}

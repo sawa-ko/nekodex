@@ -14,6 +14,10 @@ export class Nekodex extends Client {
 			logger: {
 				displayFunctionName: false,
 				minLevel: 'debug'
+			},
+			defaultCooldown: {
+				delay: 5e3,
+				limit: 1
 			}
 		});
 	}
