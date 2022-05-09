@@ -8,4 +8,11 @@ declare module '@skyra/env-utilities' {
 	}
 }
 
+declare module '@kaname-png/revoltx' {
+	interface CommandMetadataObject {
+		usages: string[];
+		examples: string[];
+	}
+}
+
 export default undefined;

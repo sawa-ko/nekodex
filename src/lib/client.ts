@@ -8,12 +8,17 @@ export class Nekodex extends Client {
 	public constructor() {
 		super({
 			defaultPrefix: envParseString('CLIENT_PREFIX'),
+			loadDefaultErrorsListeners: false,
 			hmr: {
 				enabled: envParseBoolean('CLIENT_DEBUG')
 			},
 			logger: {
 				displayFunctionName: false,
 				minLevel: 'debug'
+			},
+			defaultCooldown: {
+				delay: 5e3,
+				limit: 1
 			}
 		});
 	}
