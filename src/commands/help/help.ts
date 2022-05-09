@@ -47,7 +47,7 @@ export class HelpCommand extends Command {
 			);
 		}
 
-		const page = await args.pick('number', { minimum: 1 }).catch(() => 1);
+		const page = await args.pick('number', { minimum: 1 });
 		const commands = this.paginateCategoryCommands(category, page);
 		return message.reply(
 			{
