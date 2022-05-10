@@ -1,6 +1,6 @@
 {
 	"name": "@kaname-png/nekodex",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A simple maid bot that provides roleplay commands.",
 	"main": "dist/main.js",
 	"types": "dist/main.d.ts",
