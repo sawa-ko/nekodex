@@ -4,11 +4,13 @@ import { stripIndents } from 'common-tags';
 import { yellow, red } from 'colorette';
 import { envParseBoolean, envParseString } from '@skyra/env-utilities';
 
+import { NaekoService, RevoltService } from '#lib/services';
+
 export class Nekodex extends Client {
 	public constructor() {
 		super({
 			defaultPrefix: envParseString('CLIENT_PREFIX'),
-			loadDefaultErrorsListeners: false,
+			loadDefaultErrorsListeners: true,
 			hmr: {
 				enabled: envParseBoolean('CLIENT_DEBUG')
 			},
@@ -21,6 +23,8 @@ export class Nekodex extends Client {
 				limit: 1
 			}
 		});
+
+		container.services = { naeko: new NaekoService(envParseString('CDN_API_KEY')), revolt: new RevoltService() };
 	}
 
 	public async start(token: string) {
