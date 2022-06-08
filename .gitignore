@@ -37,3 +37,4 @@ wiki/
 
 # ignore .env
 .env.development
+.env.local
