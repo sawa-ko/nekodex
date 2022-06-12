@@ -31,7 +31,7 @@
 		"file-type": "^17.1.2",
 		"formdata-node": "^4.3.3",
 		"got": "^12.1.0",
-		"pretty-ms": "^7.0.1",
+		"pretty-ms": "^8.0.0",
 		"revolt.js": "^6.0.3",
 		"tslib": "^2.4.0"
 	},
