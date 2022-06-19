@@ -24,7 +24,7 @@
 		"prepare": "husky install .github/husky"
 	},
 	"dependencies": {
-		"@kaname-png/revoltx": "^1.6.1",
+		"@kaname-png/revoltx": "^2.0.0",
 		"@skyra/env-utilities": "^1.0.0",
 		"colorette": "^2.0.19",
 		"common-tags": "^1.8.2",
