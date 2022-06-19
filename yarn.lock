@@ -296,10 +296,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/collection@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "@discordjs/collection@npm:0.6.0"
-  checksum: a08826f04e3ddaf079913e2e2069727d518b5a0ea79cbeb66d8b559297df6586a25490b4b2aeab631483f68c2160df769115b9b3e114d8437b707dec80b02bab
+"@discordjs/collection@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@discordjs/collection@npm:0.7.0"
+  checksum: 141aa35a5433bacba3617b533557b4948388c7b59cdaecee51ccd721c1b9242e50d95bdef53ee2491535a017095f5072ace3c3e9e594193f67a1c5a8a4b7db93
   languageName: node
   linkType: hard
 
@@ -410,7 +410,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.0.2
     "@commitlint/config-conventional": ^17.0.2
-    "@kaname-png/revoltx": ^1.6.1
+    "@kaname-png/revoltx": ^2.0.0
     "@sapphire/eslint-config": ^4.3.7
     "@sapphire/prettier-config": ^1.4.3
     "@sapphire/ts-config": ^3.3.4
@@ -443,13 +443,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kaname-png/revoltx@npm:^1.6.1":
-  version: 1.6.1
-  resolution: "@kaname-png/revoltx@npm:1.6.1"
+"@kaname-png/revoltx@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@kaname-png/revoltx@npm:2.0.0"
   dependencies:
-    "@discordjs/collection": ^0.6.0
+    "@discordjs/collection": ^0.7.0
     "@favware/rollup-type-bundler": ^1.0.7
-    "@sapphire/pieces": ^3.3.3
+    "@sapphire/pieces": ^3.3.4
     "@sapphire/ratelimits": ^2.4.4
     "@sapphire/result": ^1.1.1
     "@sapphire/utilities": ^3.6.2
@@ -458,7 +458,7 @@ __metadata:
     lexure: ^0.17.0
     tslib: ^2.4.0
     tslog: ^3.3.3
-  checksum: f7689f9316df4caabaefef4e0c0e229c6ac19f9b89ebcbd45e5f923562799b97eedbeaf4efbe530dc4d7249221d35579ee9c09cc59010eb6e43e87b11f6ad89d
+  checksum: e28b44a7bb297cb922b754ab9cac29dbef42247106c2f7d92b499b923661051aec531a7a0b70da351a6fd55c0c3f1e98e22e30b492988d365ad6be9e79201500
   languageName: node
   linkType: hard
 
@@ -524,14 +524,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/pieces@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "@sapphire/pieces@npm:3.3.3"
+"@sapphire/pieces@npm:^3.3.4":
+  version: 3.3.4
+  resolution: "@sapphire/pieces@npm:3.3.4"
   dependencies:
-    "@discordjs/collection": ^0.6.0
+    "@discordjs/collection": ^0.7.0
     "@sapphire/utilities": ^3.6.2
     tslib: ^2.4.0
-  checksum: 468f71bb52ba8314e4d1ce0c4cb31ac268b51b15294ac9e500d2bd2cf76611d6f2d5b90b8cfd2d77a0c671b3c5f94b41068cd29a4fca115609f01bc64b51a4af
+  checksum: 64f1c8248f3d08db39654bf8aee8560ccf21b15fd508e8bcb97215702dd9e8bf08d6e4720dbd9a4b3c4196b8db34d214172ada8f210b119a51bc0eae4eec36e4
   languageName: node
   linkType: hard
 
