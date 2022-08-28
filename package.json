@@ -28,7 +28,7 @@
 		"@skyra/env-utilities": "^1.0.2",
 		"colorette": "^2.0.19",
 		"common-tags": "^1.8.2",
-		"file-type": "^17.1.6",
+		"file-type": "^18.0.0",
 		"formdata-node": "^5.0.0",
 		"got": "^12.3.1",
 		"pretty-ms": "^8.0.0",
