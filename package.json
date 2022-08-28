@@ -29,7 +29,7 @@
 		"colorette": "^2.0.19",
 		"common-tags": "^1.8.2",
 		"file-type": "^17.1.6",
-		"formdata-node": "^4.4.1",
+		"formdata-node": "^5.0.0",
 		"got": "^12.3.1",
 		"pretty-ms": "^8.0.0",
 		"revolt.js": "^6.0.13",
