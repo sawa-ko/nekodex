@@ -30,7 +30,7 @@
 		"common-tags": "^1.8.2",
 		"file-type": "^18.4.0",
 		"formdata-node": "^5.0.1",
-		"got": "^12.6.1",
+		"got": "^13.0.0",
 		"pretty-ms": "^8.0.0",
 		"revolt.js": "^6.0.20",
 		"tslib": "^2.5.3"
