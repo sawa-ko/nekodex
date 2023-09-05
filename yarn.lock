@@ -431,7 +431,7 @@ __metadata:
     common-tags: ^1.8.2
     cz-conventional-changelog: ^3.3.0
     eslint: ^8.45.0
-    eslint-config-prettier: ^8.8.0
+    eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.0
     file-type: ^18.5.0
     formdata-node: ^5.0.1
@@ -2424,17 +2424,6 @@ __metadata:
   version: 5.0.0
   resolution: "escape-string-regexp@npm:5.0.0"
   checksum: 20daabe197f3cb198ec28546deebcf24b3dbb1a5a269184381b3116d12f0532e06007f4bc8da25669d6a7f8efb68db0758df4cd981f57bc5b57f521a3e12c59e
-  languageName: node
-  linkType: hard
-
-"eslint-config-prettier@npm:^8.8.0":
-  version: 8.8.0
-  resolution: "eslint-config-prettier@npm:8.8.0"
-  peerDependencies:
-    eslint: ">=7.0.0"
-  bin:
-    eslint-config-prettier: bin/cli.js
-  checksum: 1e94c3882c4d5e41e1dcfa2c368dbccbfe3134f6ac7d40101644d3bfbe3eb2f2ffac757f3145910b5eacf20c0e85e02b91293d3126d770cbf3dc390b3564681c
   languageName: node
   linkType: hard
 
