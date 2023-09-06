@@ -1,4 +1,4 @@
-import { Nekodex } from './lib/client';
+import { Nekodex } from './lib/client.js';
 import { envParseString, setup } from '@skyra/env-utilities';
 
 const app = async () => {

@@ -1,4 +1,4 @@
-import type { ICDNSource } from './types';
+import type { ICDNSource } from './types.js';
 import got from 'got';
 
 export class NaekoService {

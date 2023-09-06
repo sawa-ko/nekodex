@@ -4,7 +4,7 @@ import { stripIndents } from 'common-tags';
 import { yellow, red } from 'colorette';
 import { envParseBoolean, envParseString } from '@skyra/env-utilities';
 
-import { NaekoService, RevoltService } from '#lib/services';
+import { NaekoService, RevoltService } from '#lib/services/index.js';
 
 export class Nekodex extends Client {
 	public constructor() {
@@ -15,8 +15,7 @@ export class Nekodex extends Client {
 				enabled: envParseBoolean('CLIENT_DEBUG')
 			},
 			logger: {
-				displayFunctionName: false,
-				minLevel: 'debug'
+				minLevel: 1
 			},
 			defaultCooldown: {
 				delay: 5e3,
