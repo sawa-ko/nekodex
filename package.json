@@ -33,7 +33,7 @@
 		"formdata-node": "^6.0.3",
 		"got": "^14.4.1",
 		"pretty-ms": "^9.0.0",
-		"revolt.js": "6.0.20",
+		"revolt.js": "7.0.1",
 		"tslib": "^2.6.3"
 	},
 	"devDependencies": {
