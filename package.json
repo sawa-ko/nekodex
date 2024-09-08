@@ -43,7 +43,7 @@
 		"@sapphire/prettier-config": "^2.0.0",
 		"@sapphire/ts-config": "^5.0.1",
 		"@swc/cli": "^0.4.0",
-		"@swc/core": "^1.7.23",
+		"@swc/core": "^1.7.24",
 		"@types/common-tags": "^1.8.4",
 		"@types/node": "^20.16.5",
 		"@types/ws": "^8.5.12",
