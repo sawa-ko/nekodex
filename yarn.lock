@@ -406,7 +406,7 @@ __metadata:
     "@swc/cli": "npm:^0.5.2"
     "@swc/core": "npm:^1.10.6"
     "@types/common-tags": "npm:^1.8.4"
-    "@types/node": "npm:^20.17.12"
+    "@types/node": "npm:^22.18.12"
     "@types/ws": "npm:^8.5.13"
     "@typescript-eslint/eslint-plugin": "npm:^7.13.1"
     "@typescript-eslint/parser": "npm:^7.13.1"
@@ -1000,12 +1000,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.17.12":
+"@types/node@npm:*":
   version: 20.17.12
   resolution: "@types/node@npm:20.17.12"
   dependencies:
     undici-types: "npm:~6.19.2"
   checksum: 10c0/340b65a11e4486e597163991532a08e525beee40f082cf73dc830c060426fa9ea8690a4e3931d91375e946816a884d6140d96e99ac048b51f280f21cc70d22ed
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^22.18.12":
+  version: 22.18.12
+  resolution: "@types/node@npm:22.18.12"
+  dependencies:
+    undici-types: "npm:~6.21.0"
+  checksum: 10c0/13a4638f2baba3efba2b8bc369dd6f950dccbfca78f318f9c9f2c7adc11fce14fc119723c38567dada2d57a873c092b7356c024924d5974a08f3c1f93dc706c6
   languageName: node
   linkType: hard
 
@@ -6290,6 +6299,13 @@ __metadata:
   version: 6.19.6
   resolution: "undici-types@npm:6.19.6"
   checksum: 10c0/9b2264c5700e7169c6c62c643aac56cd8984c5fd7e18ed31ff11780260e137f6340dee8317a2e6e0ae3c49f5e5ef6fa577ea07193cbaa535265cba76a267cae9
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: 10c0/c01ed51829b10aa72fc3ce64b747f8e74ae9b60eafa19a7b46ef624403508a54c526ffab06a14a26b3120d055e1104d7abe7c9017e83ced038ea5cf52f8d5e04
   languageName: node
   linkType: hard
 
